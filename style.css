@@ -11,7 +11,7 @@ nav {
   display: inline-block;
   background-color: rgb(116, 143, 68);
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
 }
 
 main {
