@@ -1,0 +1,28 @@
+body {
+  background-color: cadetblue;
+}
+
+img {
+  display: inline-block;
+  width: 400px;
+}
+
+nav {
+  display: inline-block;
+  background-color: rgb(116, 143, 68);
+  width: 100%;
+  /* position: fixed; */
+}
+
+main {
+  display: inline-block;
+  background-color: darkseagreen;
+  width: 100%;
+}
+
+.quote {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5%;
+  font-size: 25pt;
+  text-align: center;
+}
