@@ -1,23 +1,34 @@
-body {
-  background-color: cadetblue;
+/*  this is the edited style css file */
+body,
+hr {
+  background-color: #32323d;
+  color: antiquewhite;
 }
 
 img {
   display: inline-block;
-  width: 400px;
+  width: 220px;
+  height: 150px;
+  border: solid black;
 }
 
 nav {
-  display: inline-block;
-  background-color: rgb(116, 143, 68);
-  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(72, 61, 139, 0.35);
+  width: 97.5%;
   position: fixed;
+  padding: 4px;
+  border: solid rgb(255, 255, 255, 0.35);
 }
 
-main {
-  display: inline-block;
-  background-color: darkseagreen;
-  width: 100%;
+.navBar {
+  background-color: rgb(165, 138, 103);
+}
+
+a:hover {
+  background-color: blanchedalmond;
 }
 
 .quote {
@@ -27,6 +38,101 @@ main {
   text-align: center;
 }
 
-.navBar {
-  float: right;
+/* contains the main part of the body, not including navigation bar*/
+#homeContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: fixed;
+  border: solid rgb(255, 255, 255, 0.35);
+  background-color: rgb(72, 61, 139, 0.35);
+  margin-top: 11.5%;
+  padding: 30px;
+}
+
+#h-sec1 {
+  display: flex;
+  margin: 4%;
+}
+
+#h-sec2 {
+  text-align: center;
+}
+
+.h-head {
+  border: dotted rgb(255, 255, 255, 0.35);
+}
+
+/* css for the about page */
+/* container holding the entire section of about*/
+#aboutContainer,
+#portfolioContainer,
+#contactContainer,
+#submitContainer {
+  display: grid;
+  position: fixed;
+  border: solid rgba(255, 255, 255, 0.35);
+  background-color: rgba(72, 61, 139, 0.35);
+  margin-top: 11.5%;
+  padding: 30px;
+}
+
+/* grid layout for the hobbies section in about page with 2 columns and 3 rows*/
+#aboutHobbies {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto repeat(3, auto);
+  gap: 10px;
+}
+
+/* Styling for the about heading 2*/
+.a-head {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  text-align: center;
+}
+
+/* Styling for each text item in about */
+.aboutText-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* images in about are positioned in the right column */
+#fishImg,
+#keebImg,
+#teaImg {
+  display: block;
+  grid-column: 2; /* Place in the second (right) column */
+}
+
+/* Position each text item in about in the left column */
+.aboutText-item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.aboutText-item:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+.aboutText-item:nth-child(4) {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+/* Specific positions for images in about */
+.aboutFish {
+  grid-row: 2; /* First row */
+}
+
+.aboutKeeb {
+  grid-row: 3; /* Second row */
+}
+
+.aboutTea {
+  grid-row: 4; /* Third row */
+}
+
+/* css for contact html */
+.c-head {
+  position: center;
 }
