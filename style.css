@@ -97,14 +97,6 @@ a:hover {
   flex-direction: column;
 }
 
-/* images in about are positioned in the right column */
-#fishImg,
-#keebImg,
-#teaImg {
-  display: block;
-  grid-column: 2; /* Place in the second (right) column */
-}
-
 /* Position each text item in about in the left column */
 .aboutText-item:nth-child(2) {
   grid-column: 1;
@@ -117,19 +109,6 @@ a:hover {
 .aboutText-item:nth-child(4) {
   grid-column: 1;
   grid-row: 4;
-}
-
-/* Specific positions for images in about */
-.aboutFish {
-  grid-row: 2; /* First row */
-}
-
-.aboutKeeb {
-  grid-row: 3; /* Second row */
-}
-
-.aboutTea {
-  grid-row: 4; /* Third row */
 }
 
 /* css for contact html */
